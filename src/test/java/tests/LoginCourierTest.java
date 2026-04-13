@@ -5,6 +5,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -37,6 +38,7 @@ public class LoginCourierTest {
     }
 
     @Test
+    @DisplayName("Проверка что курьер корректно входит в систему")
     public void correctLogin() {
         CourierHandles courierHandles = new CourierHandles();
 
@@ -54,6 +56,7 @@ public class LoginCourierTest {
 
     @ParameterizedTest(name = "case={0}")
     @MethodSource("incorrectCredentialCases")
+    @DisplayName("Проверка что курьер не войдет в систему с некорректными данными")
     public void authIncorrectCredential(int caseIndex) {
         CourierHandles courierHandles = new CourierHandles();
 
@@ -70,13 +73,15 @@ public class LoginCourierTest {
 
     static Stream<Object[]> missingFieldCases() {
         return Stream.of(
-                new Object[]{null, "TestPass", "Недостаточно данных для входа"},  // нет логина
-                new Object[]{"TestLogin", null, "Недостаточно данных для входа"}   // нет пароля
+                new Object[]{null, "TestPass", "Недостаточно данных для входа"},
+                new Object[]{"TestLogin", null, "Недостаточно данных для входа"},
+                new Object[]{null, null, "Недостаточно данных для входа"}   // нет пароля
         );
     }
 
     @ParameterizedTest(name = "login={0}, password={1}")
     @MethodSource("missingFieldCases")
+    @DisplayName("Проверка что курьер не войдет в систему, если он не передал одно из обязательных полей")
     public void loginWithMissingField(String login, String password, String expectedMessage) {
         CourierHandles courierHandles = new CourierHandles();
 

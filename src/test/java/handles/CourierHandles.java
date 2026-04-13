@@ -1,5 +1,6 @@
 package handles;
 
+import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
 import java.util.HashMap;
@@ -9,12 +10,12 @@ import static io.restassured.RestAssured.given;
 
 public class CourierHandles {
 
-
     /*
      * Метод для логина курьера в системе
      * Возвращает response c id курьера
      * На вход принимает login курьера и пароль курьера
      */
+    @Step("Авторизация курьера")
     public Response loginCourier(String login, String password) {
         Map<String, String> json = new HashMap<>();
         // Добавляем поле только если оно не null — иначе поле отсутствует в запросе
@@ -36,6 +37,7 @@ public class CourierHandles {
      * Возвращает response со статусом создания
      * На вход принимает логин нового курьера, пароль и его имя
      */
+    @Step("Создание курьера")
     public Response createCourier(String login, String password, String firstName) {
         Map<String, String> json = new HashMap<>();
         // Добавляем поле только если оно не null — иначе поле отсутствует в запросе
@@ -55,6 +57,7 @@ public class CourierHandles {
      * Возвращает response со статусом удаления
      * На вход принимает id курьера
      */
+    @Step("Удаление курьера")
     public Response deleteCourier(int id) {
         Response response = given()
                 .when()

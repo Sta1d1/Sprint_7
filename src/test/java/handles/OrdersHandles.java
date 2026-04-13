@@ -1,5 +1,6 @@
 package handles;
 
+import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
 import java.util.HashMap;
@@ -13,6 +14,7 @@ public class OrdersHandles {
      * Метод для создания заказа
      * Возвращает response с track-номером заказа
      */
+    @Step("Создание заказа")
     public Response createOrder(String firstName,
                                 String lastName,
                                 String address,
@@ -45,6 +47,7 @@ public class OrdersHandles {
      * Метод для получения списка заказов
      * Возвращает response со списком заказов
      */
+    @Step("Получение списка заказов")
     public Response getOrders() {
         return given()
                 .when()

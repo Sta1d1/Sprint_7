@@ -4,6 +4,7 @@ import handles.OrdersHandles;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -35,6 +36,7 @@ public class CheckOrdersTest {
 
     @ParameterizedTest(name = "color={0}")
     @MethodSource("colorCases")
+    @DisplayName("Проверка создания заказа с разными данными типа color")
     public void checkCreateOrder(String[] color) {
         OrdersHandles ordersHandles = new OrdersHandles();
 
@@ -50,6 +52,7 @@ public class CheckOrdersTest {
     }
 
     @Test
+    @DisplayName("Проверка получения информации обо всех заказах")
     public void getOrdersListNotEmpty() {
         OrdersHandles ordersHandles = new OrdersHandles();
 

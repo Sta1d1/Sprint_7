@@ -5,6 +5,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -31,6 +32,7 @@ public class CreateCourierTest {
 
 
     @Test
+    @DisplayName("Проверка корректного создания курьера")
     public void successfulСreationCourier() {
         CourierHandles courierHandles = new CourierHandles();
 
@@ -43,6 +45,7 @@ public class CreateCourierTest {
     }
 
     @Test
+    @DisplayName("Проверка что нельзя создать 2-х одинаковых курьеров")
     public void duplicateCourier() {
         CourierHandles courierHandles = new CourierHandles();
 
@@ -70,6 +73,7 @@ public class CreateCourierTest {
 
     @ParameterizedTest(name = "login={0}, password={1}")
     @MethodSource("missingFieldCases")
+    @DisplayName("Проверка, что нельзя авторизоваться не передав одно или все обязательные поля")
     public void createCourierWithMissingField(String login, String password, String expectedMessage) {
         CourierHandles courierHandles = new CourierHandles();
 
