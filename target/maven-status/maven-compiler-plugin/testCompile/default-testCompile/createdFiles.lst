@@ -1,0 +1,6 @@
+handles\CourierHandles.class
+tests\CheckOrdersTest.class
+tests\CreateCourierTest.class
+tests\LoginCourierTest.class
+handles\CouriersHandles.class
+handles\OrdersHandles.class

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tests.LoginCourierTest" time="125.734" tests="7" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="D:\Education\Practicum\Scripts\Sprint_7\target\test-classes;D:\Education\Practicum\Scripts\Sprint_7\target\classes;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-java\4.31.0\selenium-java-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-api\4.31.0\selenium-api-4.31.0.jar;C:\Users\Egor\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.31.0\selenium-chrome-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.31.0\selenium-chromium-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-json\4.31.0\selenium-json-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.31.0\selenium-manager-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.31.0\selenium-devtools-v133-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v134\4.31.0\selenium-devtools-v134-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v135\4.31.0\selenium-devtools-v135-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.31.0\selenium-edge-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.31.0\selenium-firefox-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-http\4.31.0\selenium-http-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.31.0\selenium-ie-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.31.0\selenium-remote-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\com\google\guava\guava\33.4.6-jre\guava-33.4.6-jre.jar;C:\Users\Egor\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Egor\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Egor\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Egor\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-api\1.48.0\opentelemetry-api-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-context\1.48.0\opentelemetry-context-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.48.0\opentelemetry-exporter-logging-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.48.0\opentelemetry-sdk-common-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.48.0\opentelemetry-sdk-extension-autoconfigure-spi-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.48.0\opentelemetry-sdk-extension-autoconfigure-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.48.0\opentelemetry-sdk-trace-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.48.0\opentelemetry-sdk-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.48.0\opentelemetry-sdk-metrics-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.48.0\opentelemetry-sdk-logs-1.48.0.jar;C:\Users\Egor\.m2\repository\net\bytebuddy\byte-buddy\1.17.5\byte-buddy-1.17.5.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-os\4.31.0\selenium-os-4.31.0.jar;C:\Users\Egor\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.31.0\selenium-safari-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-support\4.31.0\selenium-support-4.31.0.jar;C:\Users\Egor\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.1\junit-jupiter-5.12.1.jar;C:\Users\Egor\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.1\junit-jupiter-api-5.12.1.jar;C:\Users\Egor\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Egor\.m2\repository\org\junit\platform\junit-platform-commons\1.12.1\junit-platform-commons-1.12.1.jar;C:\Users\Egor\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.1\junit-jupiter-params-5.12.1.jar;C:\Users\Egor\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.1\junit-jupiter-engine-5.12.1.jar;C:\Users\Egor\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Egor\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Egor\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Egor\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Egor\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Egor\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Egor\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Egor\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Egor\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Egor\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Egor\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Egor\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Egor\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Egor\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Egor\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Egor\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Egor\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Egor\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Egor\.m2\repository\io\qameta\allure\allure-junit5\2.33.0\allure-junit5-2.33.0.jar;C:\Users\Egor\.m2\repository\io\qameta\allure\allure-junit-platform\2.33.0\allure-junit-platform-2.33.0.jar;C:\Users\Egor\.m2\repository\io\qameta\allure\allure-java-commons\2.33.0\allure-java-commons-2.33.0.jar;C:\Users\Egor\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\Egor\.m2\repository\io\qameta\allure\allure-model\2.33.0\allure-model-2.33.0.jar;C:\Users\Egor\.m2\repository\io\qameta\allure\allure-test-filter\2.33.0\allure-test-filter-2.33.0.jar;C:\Users\Egor\.m2\repository\org\junit\platform\junit-platform-launcher\1.12.1\junit-platform-launcher-1.12.1.jar;C:\Users\Egor\.m2\repository\org\junit\platform\junit-platform-engine\1.12.1\junit-platform-engine-1.12.1.jar;C:\Users\Egor\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Egor\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\Egor\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\Egor\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.30_7\bin"/>
+    <property name="sun.java.command" value="C:\Users\Egor\AppData\Local\Temp\surefire980570889463098716\surefirebooter-20260412183132121_3.jar C:\Users\Egor\AppData\Local\Temp\surefire980570889463098716 2026-04-12T18-31-31_114-jvmRun1 surefire-20260412183132121_1tmp surefire_0-20260412183132121_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Education\Practicum\Scripts\Sprint_7\target\test-classes;D:\Education\Practicum\Scripts\Sprint_7\target\classes;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-java\4.31.0\selenium-java-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-api\4.31.0\selenium-api-4.31.0.jar;C:\Users\Egor\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.31.0\selenium-chrome-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.31.0\selenium-chromium-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-json\4.31.0\selenium-json-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.31.0\selenium-manager-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.31.0\selenium-devtools-v133-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v134\4.31.0\selenium-devtools-v134-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v135\4.31.0\selenium-devtools-v135-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.31.0\selenium-edge-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.31.0\selenium-firefox-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-http\4.31.0\selenium-http-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.31.0\selenium-ie-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.31.0\selenium-remote-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\com\google\guava\guava\33.4.6-jre\guava-33.4.6-jre.jar;C:\Users\Egor\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Egor\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Egor\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\Egor\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-api\1.48.0\opentelemetry-api-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-context\1.48.0\opentelemetry-context-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.48.0\opentelemetry-exporter-logging-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.48.0\opentelemetry-sdk-common-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.48.0\opentelemetry-sdk-extension-autoconfigure-spi-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.48.0\opentelemetry-sdk-extension-autoconfigure-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.48.0\opentelemetry-sdk-trace-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.48.0\opentelemetry-sdk-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.48.0\opentelemetry-sdk-metrics-1.48.0.jar;C:\Users\Egor\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.48.0\opentelemetry-sdk-logs-1.48.0.jar;C:\Users\Egor\.m2\repository\net\bytebuddy\byte-buddy\1.17.5\byte-buddy-1.17.5.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-os\4.31.0\selenium-os-4.31.0.jar;C:\Users\Egor\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.31.0\selenium-safari-driver-4.31.0.jar;C:\Users\Egor\.m2\repository\org\seleniumhq\selenium\selenium-support\4.31.0\selenium-support-4.31.0.jar;C:\Users\Egor\.m2\repository\org\junit\jupiter\junit-jupiter\5.12.1\junit-jupiter-5.12.1.jar;C:\Users\Egor\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.12.1\junit-jupiter-api-5.12.1.jar;C:\Users\Egor\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Egor\.m2\repository\org\junit\platform\junit-platform-commons\1.12.1\junit-platform-commons-1.12.1.jar;C:\Users\Egor\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.12.1\junit-jupiter-params-5.12.1.jar;C:\Users\Egor\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.12.1\junit-jupiter-engine-5.12.1.jar;C:\Users\Egor\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\Egor\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\Egor\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\Egor\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Egor\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Egor\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Egor\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Egor\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Egor\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Egor\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Egor\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\Egor\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\Egor\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\Egor\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\Egor\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Egor\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Egor\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Egor\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\Egor\.m2\repository\io\qameta\allure\allure-junit5\2.33.0\allure-junit5-2.33.0.jar;C:\Users\Egor\.m2\repository\io\qameta\allure\allure-junit-platform\2.33.0\allure-junit-platform-2.33.0.jar;C:\Users\Egor\.m2\repository\io\qameta\allure\allure-java-commons\2.33.0\allure-java-commons-2.33.0.jar;C:\Users\Egor\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\Egor\.m2\repository\io\qameta\allure\allure-model\2.33.0\allure-model-2.33.0.jar;C:\Users\Egor\.m2\repository\io\qameta\allure\allure-test-filter\2.33.0\allure-test-filter-2.33.0.jar;C:\Users\Egor\.m2\repository\org\junit\platform\junit-platform-launcher\1.12.1\junit-platform-launcher-1.12.1.jar;C:\Users\Egor\.m2\repository\org\junit\platform\junit-platform-engine\1.12.1\junit-platform-engine-1.12.1.jar;C:\Users\Egor\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Egor\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\Egor\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\Egor\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="D:\Education\Practicum\Scripts\Sprint_7\target/allure-results"/>
+    <property name="user.home" value="C:\Users\Egor"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Amazon Corretto\jdk11.0.30_7"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="D:\Education\Practicum\Scripts\Sprint_7"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Egor\AppData\Local\Temp\surefire980570889463098716\surefirebooter-20260412183132121_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.30+7-LTS"/>
+    <property name="user.name" value="Egor"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-11.0.30.7.1"/>
+    <property name="maven.ext.class.path" value="C:\Users\Egor\AppData\Roaming\JetBrains\IntelliJIdea2025.3\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="localRepository" value="C:\Users\Egor\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-11/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Egor\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2025.3.1"/>
+    <property name="java.version" value="11.0.30"/>
+    <property name="user.dir" value="D:\Education\Practicum\Scripts\Sprint_7"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.30_7\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Amazon Corretto\jdk11.0.30_7\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Kaspersky Lab\KES.12.8.0\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PowerShell\7\;C:\Program Files\WireGuard\;C:\Users\Egor\AppData\Local\Microsoft\WindowsApps;C:\Users\Egor\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\apache-maven-3.9.12\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="11.0.30+7-LTS"/>
+    <property name="java.specification.maintenance.version" value="3"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="C:\Users\Egor\.m2\repository"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="correctLogin" classname="tests.LoginCourierTest" time="0.856"/>
+  <testcase name="authIncorrectCredential(int)[1]" classname="tests.LoginCourierTest" time="0.691"/>
+  <testcase name="authIncorrectCredential(int)[2]" classname="tests.LoginCourierTest" time="0.803"/>
+  <testcase name="authIncorrectCredential(int)[3]" classname="tests.LoginCourierTest" time="0.89"/>
+  <testcase name="loginWithMissingField(String, String, String)[1]" classname="tests.LoginCourierTest" time="0.796"/>
+  <testcase name="loginWithMissingField(String, String, String)[2]" classname="tests.LoginCourierTest" time="60.858">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;504&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <504>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at jdk.internal.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor186.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at tests.LoginCourierTest.loginWithMissingField(LoginCourierTest.java:90)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+]]></failure>
+  </testcase>
+  <testcase name="loginWithMissingField(String, String, String)[3]" classname="tests.LoginCourierTest" time="60.742">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;504&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <504>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at jdk.internal.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at jdk.internal.reflect.GeneratedMethodAccessor186.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at tests.LoginCourierTest.loginWithMissingField(LoginCourierTest.java:90)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:274)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1655)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+]]></failure>
+  </testcase>
+</testsuite>
